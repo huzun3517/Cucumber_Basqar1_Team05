@@ -8,7 +8,7 @@
     </test>
 
     <test name="test2">
-        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="browser" value="edge"></parameter>
         <classes>
             <class name="Runners.TestRunnerCrossBrowser"></class>
         </classes>

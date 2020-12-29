@@ -1,13 +1,79 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("3.1_CountryCreateDelete.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("1_Login.feature");
 formatter.feature({
-  "line": 1,
-  "name": "Country Create Delete Functionality",
+  "line": 2,
+  "name": "Login Functionality",
   "description": "",
-  "id": "country-create-delete-functionality",
+  "id": "login-functionality",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 1071940,
+  "duration": 1085624,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 5,
+  "name": "Login with valid username and password",
+  "description": "",
+  "id": "login-functionality;login-with-valid-username-and-password",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 4,
+      "name": "@RegressionTest"
+    }
+  ]
+});
+formatter.step({
+  "line": 7,
+  "name": "Navigate to basqar",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 8,
+  "name": "Enter username and password and click login button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 9,
+  "name": "User should login successfully",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginSteps.navigate_to_basqar()"
+});
+formatter.result({
+  "duration": 22423211485,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginSteps.enter_username_and_password_and_click_login_button()"
+});
+formatter.result({
+  "duration": 14279008227,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginSteps.user_should_login_successfully()"
+});
+formatter.result({
+  "duration": 120308,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 10383163704,
+  "status": "passed"
+});
+formatter.uri("3.6_SubjectsCreateDelete.feature");
+formatter.feature({
+  "line": 1,
+  "name": "Subjects Create Delete Functionality",
+  "description": "",
+  "id": "subjects-create-delete-functionality",
+  "keyword": "Feature"
+});
+formatter.before({
+  "duration": 141975,
   "status": "passed"
 });
 formatter.background({
@@ -36,34 +102,34 @@ formatter.match({
   "location": "LoginSteps.navigate_to_basqar()"
 });
 formatter.result({
-  "duration": 16175836312,
+  "duration": 6323416751,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.enter_username_and_password_and_click_login_button()"
 });
 formatter.result({
-  "duration": 7563625323,
+  "duration": 5501422601,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_should_login_successfully()"
 });
 formatter.result({
-  "duration": 50746,
+  "duration": 37062,
   "status": "passed"
 });
 formatter.scenario({
   "line": 9,
-  "name": "Create and delete a Country",
+  "name": "Create and delete a Subjects",
   "description": "",
-  "id": "country-create-delete-functionality;create-and-delete-a-country",
+  "id": "subjects-create-delete-functionality;create-and-delete-a-subjects",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
       "line": 8,
-      "name": "@SmokeTest"
+      "name": "@RegressionTest"
     }
   ]
 });
@@ -73,19 +139,19 @@ formatter.step({
   "rows": [
     {
       "cells": [
-        "setupOne"
+        "education"
       ],
       "line": 12
     },
     {
       "cells": [
-        "parameters"
+        "setup5"
       ],
       "line": 13
     },
     {
       "cells": [
-        "country"
+        "subject"
       ],
       "line": 14
     }
@@ -112,14 +178,14 @@ formatter.step({
     {
       "cells": [
         "nameInput",
-        "USA"
+        "StatisticsTeam5"
       ],
       "line": 20
     },
     {
       "cells": [
         "codeInput",
-        "007"
+        "Group5"
       ],
       "line": 21
     }
@@ -132,245 +198,49 @@ formatter.step({
   "rows": [
     {
       "cells": [
-        "saveButton"
+        "subjectCategory"
       ],
       "line": 24
+    },
+    {
+      "cells": [
+        "subjectOption"
+      ],
+      "line": 25
+    },
+    {
+      "cells": [
+        "style"
+      ],
+      "line": 26
+    },
+    {
+      "cells": [
+        "subjectOption"
+      ],
+      "line": 27
+    },
+    {
+      "cells": [
+        "saveButton"
+      ],
+      "line": 28
     }
   ],
   "keyword": "And "
-});
-formatter.step({
-  "line": 26,
-  "name": "Success message should be displayed",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 28,
-  "name": "User delete the \"USA\"",
-  "keyword": "When "
 });
 formatter.step({
   "line": 30,
   "name": "Success message should be displayed",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "General.clickOnTheElementInTheLeftClass(DataTable)"
-});
-formatter.result({
-  "duration": 1413952322,
-  "status": "passed"
-});
-formatter.match({
-  "location": "General.clickOnTheElementInTheContentClass(DataTable)"
-});
-formatter.result({
-  "duration": 962350399,
-  "status": "passed"
-});
-formatter.match({
-  "location": "General.userSendingTheKeysInTheFormContentClass(DataTable)"
-});
-formatter.result({
-  "duration": 1006429927,
-  "status": "passed"
-});
-formatter.match({
-  "location": "General.clickOnTheElementInTheContentClass(DataTable)"
-});
-formatter.result({
-  "duration": 343026975,
-  "status": "passed"
-});
-formatter.match({
-  "location": "General.success_message_should_be_displayed()"
-});
-formatter.result({
-  "duration": 1015478695,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "USA",
-      "offset": 17
-    }
-  ],
-  "location": "General.user_delete_the(String)"
-});
-formatter.result({
-  "duration": 4546450340,
-  "status": "passed"
-});
-formatter.match({
-  "location": "General.success_message_should_be_displayed()"
-});
-formatter.result({
-  "duration": 757072236,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 7319977991,
-  "status": "passed"
-});
-formatter.uri("3.2_CityCreateDelete.feature");
-formatter.feature({
-  "line": 1,
-  "name": "Cities Create Delete Functionality",
-  "description": "",
-  "id": "cities-create-delete-functionality",
-  "keyword": "Feature"
-});
-formatter.before({
-  "duration": 289082,
-  "status": "passed"
-});
-formatter.background({
-  "line": 3,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
 formatter.step({
-  "line": 4,
-  "name": "Navigate to basqar",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 5,
-  "name": "Enter username and password and click login button",
+  "line": 32,
+  "name": "User delete the \"StatisticsTeam5\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 6,
-  "name": "User should login successfully",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginSteps.navigate_to_basqar()"
-});
-formatter.result({
-  "duration": 10484933546,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginSteps.enter_username_and_password_and_click_login_button()"
-});
-formatter.result({
-  "duration": 16413272666,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginSteps.user_should_login_successfully()"
-});
-formatter.result({
-  "duration": 94079,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 9,
-  "name": "Create and delete a Cities",
-  "description": "",
-  "id": "cities-create-delete-functionality;create-and-delete-a-cities",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 8,
-      "name": "@SmokeTest"
-    }
-  ]
-});
-formatter.step({
-  "line": 11,
-  "name": "Click on the element in the left class",
-  "rows": [
-    {
-      "cells": [
-        "setupOne"
-      ],
-      "line": 12
-    },
-    {
-      "cells": [
-        "parameters"
-      ],
-      "line": 13
-    },
-    {
-      "cells": [
-        "cities"
-      ],
-      "line": 14
-    }
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 16,
-  "name": "Click on the element in the content class",
-  "rows": [
-    {
-      "cells": [
-        "addButton"
-      ],
-      "line": 17
-    },
-    {
-      "cells": [
-        "countrySelect"
-      ],
-      "line": 18
-    },
-    {
-      "cells": [
-        "countryOption"
-      ],
-      "line": 19
-    }
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 21,
-  "name": "User sending the keys in the form content class",
-  "rows": [
-    {
-      "cells": [
-        "nameInput",
-        "Milano"
-      ],
-      "line": 22
-    }
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 24,
-  "name": "Click on the element in the content class",
-  "rows": [
-    {
-      "cells": [
-        "saveButton"
-      ],
-      "line": 25
-    }
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 27,
-  "name": "Success message should be displayed",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 29,
-  "name": "User delete the \"Milano\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 31,
+  "line": 34,
   "name": "Success message should be displayed",
   "keyword": "Then "
 });
@@ -378,59 +248,59 @@ formatter.match({
   "location": "General.clickOnTheElementInTheLeftClass(DataTable)"
 });
 formatter.result({
-  "duration": 3067997468,
+  "duration": 2171422543,
   "status": "passed"
 });
 formatter.match({
   "location": "General.clickOnTheElementInTheContentClass(DataTable)"
 });
 formatter.result({
-  "duration": 8527861880,
+  "duration": 1522558629,
   "status": "passed"
 });
 formatter.match({
   "location": "General.userSendingTheKeysInTheFormContentClass(DataTable)"
 });
 formatter.result({
-  "duration": 941137396,
+  "duration": 2223713245,
   "status": "passed"
 });
 formatter.match({
   "location": "General.clickOnTheElementInTheContentClass(DataTable)"
 });
 formatter.result({
-  "duration": 636417440,
+  "duration": 3801318828,
   "status": "passed"
 });
 formatter.match({
   "location": "General.success_message_should_be_displayed()"
 });
 formatter.result({
-  "duration": 1510831152,
+  "duration": 1556297931,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Milano",
+      "val": "StatisticsTeam5",
       "offset": 17
     }
   ],
   "location": "General.user_delete_the(String)"
 });
 formatter.result({
-  "duration": 6677315361,
+  "duration": 6640113922,
   "status": "passed"
 });
 formatter.match({
   "location": "General.success_message_should_be_displayed()"
 });
 formatter.result({
-  "duration": 1268617825,
+  "duration": 1474319632,
   "status": "passed"
 });
 formatter.after({
-  "duration": 6347427629,
+  "duration": 7907495025,
   "status": "passed"
 });
 });
